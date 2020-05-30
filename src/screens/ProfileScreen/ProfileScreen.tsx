@@ -1,13 +1,13 @@
 import React from 'react';
-import {Image, FlatList, Alert} from 'react-native';
+import {Image, FlatList, Alert, TouchableOpacity, Linking} from 'react-native';
 import {TOP_BANNER} from '../../images';
 import {Container, Header, Title, Body, Text} from 'native-base';
 import styles from './ProfileScreen.styles';
 
 export default function ProfileScreen() {
-  //handling onPress action
-  function getListViewItem(item) {
-    Alert.alert(item.key);
+  
+  function handleButtonPress(item) {
+    Linking.openURL(item.key);
   }
 
   return (
@@ -19,16 +19,21 @@ export default function ProfileScreen() {
       </Header>
       <Image style={styles.aboutUsLogo} source={TOP_BANNER}></Image>
 
-      <FlatList
+      <FlatList 
         data={[
-          {key: 'Tamil - www.iraivarthai.org'},
-          {key: 'Sinhala - www.supuwatha.org'},
-          {key: 'English - www.missal.org'},
-          {key: 'Saints - www.dailysaints.org'},
-          {key: 'Iraigeethangal'},
-          {key: 'Thavageethangal'},
+          {name: 'Tamil - www.iraivarthai.org', key: 'www.iraivarthai.org'},
+          {name: 'Sinhala - www.supuwatha.org', key: 'https://www.supuwatha.org'},
+          {name: 'English - www.missial.org', key: 'https://www.missal.org'},
+          {name: 'Saints - www.dailysaints.org', key: 'https://www.dailysaints.org'},
+          {name: 'Tamil - Iraigeethangal', key: 'https://www.iraivarthai.org/iraigeethangal'},
+          {name: 'Tamil - Lent songs', key: 'https://www.iraivarthai.org/thavageethangal'},
         ]}
-        renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+      renderItem={({item}) => 
+      
+      <TouchableOpacity onPress={ () => handleButtonPress(item)}>
+      <Text style={styles.item}>{item.name}</Text>
+    </TouchableOpacity>
+    }
         ItemSeparatorComponent={this.renderSeparator}
       />
     </Container>
