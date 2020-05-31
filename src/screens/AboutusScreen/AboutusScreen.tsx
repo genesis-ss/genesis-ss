@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, Linking, ScrollView } from 'react-native';
 import { TOP_BANNER, WHATSAPP, WHATSAPP_SUBSCRIPTION } from '../../images';
-import { Container, Header, Title, Body, Text, Card, CardItem, Left, Thumbnail, Button } from 'native-base';
+import { Container, Header, Title, Body, Text, Card, CardItem, Left, Thumbnail, Button, Right } from 'native-base';
 import Share from 'react-native-share';
 
 import styles from './AboutusScreen.styles';
@@ -57,7 +57,7 @@ export default function AboutusScreen() {
             <Left>
               <Thumbnail source={WHATSAPP} />
               <Body>
-                <Text>We are on WhatsApp</Text>
+                <Text>We are on WhatsApp & Viber</Text>
                 <Text note>Daily tamil reading on the go</Text>
               </Body>
             </Left>
@@ -73,7 +73,17 @@ export default function AboutusScreen() {
                   Linking.openURL('https://chat.whatsapp.com/JnapEc1oODtDhJ7OPNs996');
                 }}
               >
-                <Text>Tap here to subscribe</Text>
+                <Text>WhatsApp Subscription 👈 tap here</Text>
+              </Button>
+              <Text style={{ flex: 1, height: 10 }}>-</Text>
+              <Button
+                danger
+                full
+                onPress={() => {
+                  Linking.openURL('https://invite.viber.com/?g=e98P3DlPZEDXZ2VWcwuP6zpnJiYBQcoH');
+                }}
+              >
+                <Text>Viber Subscription 👈 tap here</Text>
               </Button>
             </Body>
           </CardItem>

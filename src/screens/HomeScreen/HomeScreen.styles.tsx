@@ -39,4 +39,11 @@ export default StyleSheet.create({
     left: 4,
     right: 4,
   },
+  poster: {
+    resizeMode: 'center',
+    flex: 1,
+    aspectRatio: 1, // Your aspect ratio
+    height: 200,
+    width: 300,
+  },
 });

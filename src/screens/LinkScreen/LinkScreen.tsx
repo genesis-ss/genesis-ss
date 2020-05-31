@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, ScrollView, Linking, TouchableOpacity, SafeAreaView } from 'react-native';
+import { View, Text, Image, ScrollView, Linking, TouchableOpacity, SafeAreaView, Platform } from 'react-native';
 import { Container, Header, Title, Body, Content, Card, Icon, CardItem, Right, Left, Thumbnail } from 'native-base';
 import {
   IRAIPUTHAHAM,
@@ -29,279 +29,191 @@ export default function LinkScreen() {
       <ScrollView>
         <Content>
           <Card>
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL('https://www.iraivarthai.org');
+              }}
+            >
               <Left>
                 <Thumbnail square source={IRAIVARTHAI}></Thumbnail>
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.iraivarthai.org');
-                  }}
-                >
-                  Iraivarthai
-                </Text>
+                <Text style={styles.Text}>Iraivarthai - இறைவார்த்தை</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.iraivarthai.org');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL('https://www.supuwatha.org');
+              }}
+            >
               <Left>
                 <Thumbnail square source={SUPUWATHA}></Thumbnail>
 
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.supuwatha.org');
-                  }}
-                >
-                  Supuwatha
-                </Text>
+                <Text style={styles.Text}>Supuwatha</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.supuwatha.org');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL('https://www.missal.org');
+              }}
+            >
               <Left>
                 <Thumbnail square source={MISSAL}></Thumbnail>
-
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.missal.org');
-                  }}
-                >
-                  Missal
-                </Text>
+                <Text style={styles.Text}>Missal</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.missal.org');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL('https://www.dailysaints.org');
+              }}
+            >
               <Left>
                 <Thumbnail square source={SAINTS}></Thumbnail>
 
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.dailysaints.org');
-                  }}
-                >
-                  Saints
-                </Text>
+                <Text style={styles.Text}>Saints</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.dailysaints.org');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button={true}
+              onPress={() => {
+                Linking.openURL(
+                  Platform.OS === 'ios'
+                    ? 'https://apps.apple.com/sg/app/iraiputhaham/id1019334920'
+                    : 'https://play.google.com/store/apps/details?id=com.iraivarthai.iraiputhaham&hl=en',
+                );
+              }}
+            >
               <Left>
                 <Thumbnail square source={IRAIPUTHAHAM}></Thumbnail>
-
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.iraiputhaham.org');
-                  }}
-                >
-                  Iraiputhaham
-                </Text>
+                <Text style={styles.Text}>Iraiputhaham - இறைப்புத்தகம் </Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.iraiputhaham.org');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL('https://www.youtube.com/user/Supuwatha');
+              }}
+            >
               <Left>
                 <Thumbnail square source={YOUTUBE}></Thumbnail>
 
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.youtube.com/user/Supuwatha');
-                  }}
-                >
-                  Supuwatha Youtube
-                </Text>
+                <Text style={styles.Text}>Supuwatha Youtube</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.youtube.com/user/Supuwatha');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              button
+              style={styles.CardItem}
+              onPress={() => {
+                Linking.openURL('https://soundcloud.com/supuwatha');
+              }}
+            >
               <Left>
                 <Thumbnail square source={SOUNDCLOUD}></Thumbnail>
 
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://soundcloud.com/supuwatha');
-                  }}
-                >
-                  Supuwatha SoundCloud
-                </Text>
+                <Text style={styles.Text}>Supuwatha SoundCloud</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://soundcloud.com/supuwatha');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL('https://twitter.com/supuwatha');
+              }}
+            >
               <Left>
                 <Thumbnail square source={TWITTER}></Thumbnail>
 
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://twitter.com/supuwatha');
-                  }}
-                >
-                  Supuwatha Twitter
-                </Text>
+                <Text style={styles.Text}>Supuwatha Twitter</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://twitter.com/supuwatha');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              button
+              style={styles.CardItem}
+              onPress={() => {
+                Linking.openURL('https://m.facebook.com/SUPUWATHA');
+              }}
+            >
               <Left>
                 <Thumbnail square source={FACEBOOK}></Thumbnail>
 
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.facebook.com/iraivarthai');
-                  }}
-                >
-                  Supuwatha Facebook
-                </Text>
+                <Text style={styles.Text}>Supuwatha Facebook</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.facebook.com/iraivarthai');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL('https://www.supuwatha.com/catholicradio/radio.html');
+              }}
+            >
               <Left>
                 <Thumbnail square source={IRAIOLI}></Thumbnail>
 
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.supuwatha.com/catholicradio/radio.html');
-                  }}
-                >
-                  IraiOli Tamil Radio Web
-                </Text>
+                <Text style={styles.Text}>IraiOli Tamil radio web</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.supuwatha.com/catholicradio/radio.html');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL(
+                  Platform.OS === 'ios'
+                    ? 'https://apps.apple.com/sg/app/my-catholic-radio/id1475346348'
+                    : 'https://play.google.com/store/apps/details?id=com.supuwatha.mycatholicradiov2&hl=en_SG',
+                );
+              }}
+            >
+              <Left>
+                <Thumbnail square source={IRAIOLI}></Thumbnail>
+
+                <Text style={styles.Text}>IraiOli Tamil radio mobile app</Text>
+              </Left>
+            </CardItem>
+
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL('https://www.iraivarthai.org/thavageethangal/');
+              }}
+            >
               <Left>
                 <Thumbnail square source={THAVAGEETHANGAL}></Thumbnail>
 
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.iraivarthai.org/thavageethangal/');
-                  }}
-                >
-                  Thavageethangal Hymns
-                </Text>
+                <Text style={styles.Text}>Thavageethangal Hymns</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.iraivarthai.org/thavageethangal/');
-                  }}
-                />
-              </Right>
             </CardItem>
 
-            <CardItem>
+            <CardItem
+              style={styles.CardItem}
+              button
+              onPress={() => {
+                Linking.openURL('https://www.iraivarthai.org/iraigeethangal/');
+              }}
+            >
               <Left>
                 <Thumbnail square source={IRAIGEETHANGAL}></Thumbnail>
 
-                <Text
-                  style={styles.Text}
-                  onPress={() => {
-                    Linking.openURL('https://www.iraivarthai.org/iraigeethangal/');
-                  }}
-                >
-                  Iraigeethangal Hymns
-                </Text>
+                <Text style={styles.Text}>Iraigeethangal Hymns</Text>
               </Left>
-              <Right>
-                <Icon
-                  name="arrow-forward"
-                  onPress={() => {
-                    Linking.openURL('https://www.iraivarthai.org/iraigeethangal/');
-                  }}
-                />
-              </Right>
             </CardItem>
           </Card>
         </Content>

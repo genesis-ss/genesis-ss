@@ -18,4 +18,8 @@ export default StyleSheet.create({
     fontSize: 16,
     paddingLeft: 20,
   },
+  CardItem: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#C0C0C0',
+  },
 });
