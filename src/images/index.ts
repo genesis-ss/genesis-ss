@@ -34,6 +34,7 @@ import LENT20 from '../images/lent20.png';
 import WHATSAPP from '../images/whatsapp.png';
 import WHATSAPP_SUBSCRIPTION from '../images/iraivarthai_whatsapp.jpeg';
 import POSTER from '../images/poster.jpg';
+import IRAIOLI2 from '../images/iraioli2.png';
 
 export {
   TOP_BANNER,
@@ -72,4 +73,5 @@ export {
   WHATSAPP,
   WHATSAPP_SUBSCRIPTION,
   POSTER,
+  IRAIOLI2,
 };

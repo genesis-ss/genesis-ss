@@ -16,26 +16,26 @@
 		18CB01C66C4947B7B0F4A5DC /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9D4895CA12D4BCF91CFDBA2 /* Entypo.ttf */; };
 		1AEEA2F9590F49AF89C67F7C /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85CCD1EF18E5456EBF2254BB /* SimpleLineIcons.ttf */; };
 		1C70317E8DB940398E93B387 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6451E76304CF48E4A6403B73 /* FontAwesome.ttf */; };
-		2A701CEC1AB58FE691690DBA /* libPods-iraivarthai-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3A26E041E915622DD23DF3 /* libPods-iraivarthai-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* iraivarthaiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* iraivarthaiTests.m */; };
-		316D01A7BB48298FFB746AAF /* libPods-iraivarthai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5411562FB69194A54A3486C6 /* libPods-iraivarthai.a */; };
 		398B50209F654892A84E52AE /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E021C9DF4BA142D2943512E3 /* Ionicons.ttf */; };
 		428C1AC7422F47998EB26015 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5556AFF4ADFE4AF39083C131 /* Octicons.ttf */; };
 		4CFCD8FD382D428FA4A38E51 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E257C531C54C4F968B88EE78 /* FontAwesome5_Regular.ttf */; };
+		55F0832009E8972BFD4DA1FF /* libPods-iraivarthai-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB4860FD0E9DB03C1DD4B41 /* libPods-iraivarthai-tvOS.a */; };
 		58048D75C5824DCC83E5A514 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA8F1B9145FB4CEA89B76C8C /* Foundation.ttf */; };
 		6412AF38B7B543A995D657C6 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACA1FBAF955741FD9E192BB5 /* Roboto_medium.ttf */; };
 		6D8AEBFDA00D4427A7BADE8A /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36E97B3EF6AE4B9B9F29E6BB /* AntDesign.ttf */; };
 		909C5C1D4EB246AFA7988AF9 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 059D94B3C90C4F6EB94B3C66 /* EvilIcons.ttf */; };
 		91162EA31C2B4957948DDEFC /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E403365E15D431787CFE86A /* Fontisto.ttf */; };
-		AB562B2B14DA215A3F292E23 /* libPods-iraivarthai-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DE253D608C4DF5AF9C86AB /* libPods-iraivarthai-tvOS.a */; };
-		AF4B0908FE88D018F642F960 /* libPods-iraivarthai-iraivarthaiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4271E25293EA22172CCEFA5 /* libPods-iraivarthai-iraivarthaiTests.a */; };
+		965C90E867AD30EA72F770AA /* libPods-iraivarthai-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C4A44585D6717AC7BF9B6F /* libPods-iraivarthai-tvOSTests.a */; };
 		B752FE6685BA4CE3A46098F2 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C07E5FC273334BBEA54A8572 /* FontAwesome5_Brands.ttf */; };
+		C301CB53BD9EB4B98BA5EFEF /* libPods-iraivarthai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7851BA8D91A6F72A8F93DE9 /* libPods-iraivarthai.a */; };
 		C31B90FED4214FD3BAB54360 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB9F4DD6DE9442CA45BDE56 /* FontAwesome5_Solid.ttf */; };
 		CC07B8F83FE44EFBB0931E90 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AF642E1FCE476C967316CB /* Zocial.ttf */; };
 		E06AA21086E146399791C3F8 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93D4C3CFA716462EA083A98B /* rubicon-icon-font.ttf */; };
+		EE2E15D8BB89ED87C15EA8B7 /* libPods-iraivarthai-iraivarthaiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88688ED610EFE2FCAC8CA319 /* libPods-iraivarthai-iraivarthaiTests.a */; };
 		EF43FBD0713C4A1293E82788 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2826F560D44AEEB7B345C7 /* MaterialCommunityIcons.ttf */; };
 		EF7518E2E4E5419484798988 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91284B8393274881AB969CEB /* Feather.ttf */; };
 		F9EF275F436B44AF90CF2D1E /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2183FF182C1430F9B55336E /* Roboto.ttf */; };
@@ -64,6 +64,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* iraivarthaiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iraivarthaiTests.m; sourceTree = "<group>"; };
 		059D94B3C90C4F6EB94B3C66 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		0DB4860FD0E9DB03C1DD4B41 /* libPods-iraivarthai-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iraivarthai-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* Iraivarthai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iraivarthai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iraivarthai/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iraivarthai/AppDelegate.m; sourceTree = "<group>"; };
@@ -71,38 +72,37 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = iraivarthai/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iraivarthai/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = iraivarthai/main.m; sourceTree = "<group>"; };
-		1818BD5AF72E2257152F532E /* Pods-iraivarthai-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-iraivarthai-tvOSTests/Pods-iraivarthai-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		2032A569C53ACB1DA8617ABB /* Pods-iraivarthai-iraivarthaiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-iraivarthaiTests.release.xcconfig"; path = "Target Support Files/Pods-iraivarthai-iraivarthaiTests/Pods-iraivarthai-iraivarthaiTests.release.xcconfig"; sourceTree = "<group>"; };
+		1637A6E4E740B69D74790E89 /* Pods-iraivarthai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai.debug.xcconfig"; path = "Target Support Files/Pods-iraivarthai/Pods-iraivarthai.debug.xcconfig"; sourceTree = "<group>"; };
 		207E899A24816F2E0070042F /* iraivarthai.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iraivarthai.entitlements; path = iraivarthai/iraivarthai.entitlements; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* iraivarthai-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iraivarthai-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* iraivarthai-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iraivarthai-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		33DE253D608C4DF5AF9C86AB /* libPods-iraivarthai-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iraivarthai-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		362865DC00D967B6015FEA47 /* Pods-iraivarthai-iraivarthaiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-iraivarthaiTests.release.xcconfig"; path = "Target Support Files/Pods-iraivarthai-iraivarthaiTests/Pods-iraivarthai-iraivarthaiTests.release.xcconfig"; sourceTree = "<group>"; };
 		36E97B3EF6AE4B9B9F29E6BB /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		3C180C0359B8452FBA7A93A8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		4C2826F560D44AEEB7B345C7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		5411562FB69194A54A3486C6 /* libPods-iraivarthai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iraivarthai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E30F282EB4BDC6101831BAA /* Pods-iraivarthai-iraivarthaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-iraivarthaiTests.debug.xcconfig"; path = "Target Support Files/Pods-iraivarthai-iraivarthaiTests/Pods-iraivarthai-iraivarthaiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5556AFF4ADFE4AF39083C131 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		5FB9F4DD6DE9442CA45BDE56 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		60FAAD045214F0EB214D8B4A /* Pods-iraivarthai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai.release.xcconfig"; path = "Target Support Files/Pods-iraivarthai/Pods-iraivarthai.release.xcconfig"; sourceTree = "<group>"; };
 		6451E76304CF48E4A6403B73 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		65C4A44585D6717AC7BF9B6F /* libPods-iraivarthai-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iraivarthai-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E403365E15D431787CFE86A /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		7EAC2BB88BA3B206280D6C30 /* Pods-iraivarthai-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-iraivarthai-tvOSTests/Pods-iraivarthai-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		85CCD1EF18E5456EBF2254BB /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		88FA8CFB4E506DF814C67773 /* Pods-iraivarthai-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-tvOS.release.xcconfig"; path = "Target Support Files/Pods-iraivarthai-tvOS/Pods-iraivarthai-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		8F3A26E041E915622DD23DF3 /* libPods-iraivarthai-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iraivarthai-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EC7B7555765B0E8998E1BA /* Pods-iraivarthai-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-tvOS.release.xcconfig"; path = "Target Support Files/Pods-iraivarthai-tvOS/Pods-iraivarthai-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		88688ED610EFE2FCAC8CA319 /* libPods-iraivarthai-iraivarthaiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iraivarthai-iraivarthaiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91284B8393274881AB969CEB /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		93D4C3CFA716462EA083A98B /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
-		9B255A0649E959A8A80B842C /* Pods-iraivarthai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai.debug.xcconfig"; path = "Target Support Files/Pods-iraivarthai/Pods-iraivarthai.debug.xcconfig"; sourceTree = "<group>"; };
+		A00B2564AAD37C0EF8FC8BB9 /* Pods-iraivarthai-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-iraivarthai-tvOSTests/Pods-iraivarthai-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9AF642E1FCE476C967316CB /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		AA8F1B9145FB4CEA89B76C8C /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		ABC680439D77CBB8EE3B0273 /* Pods-iraivarthai-iraivarthaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-iraivarthaiTests.debug.xcconfig"; path = "Target Support Files/Pods-iraivarthai-iraivarthaiTests/Pods-iraivarthai-iraivarthaiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACA1FBAF955741FD9E192BB5 /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		AE54AF6D2D1EE7C3AC7B93CC /* Pods-iraivarthai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai.release.xcconfig"; path = "Target Support Files/Pods-iraivarthai/Pods-iraivarthai.release.xcconfig"; sourceTree = "<group>"; };
+		B165DAA2669B29EEEFB69FC8 /* Pods-iraivarthai-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-iraivarthai-tvOS/Pods-iraivarthai-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B7851BA8D91A6F72A8F93DE9 /* libPods-iraivarthai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iraivarthai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D4895CA12D4BCF91CFDBA2 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		C07E5FC273334BBEA54A8572 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		CDF9F95C2BFB7E24092438F3 /* Pods-iraivarthai-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-iraivarthai-tvOS/Pods-iraivarthai-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E021C9DF4BA142D2943512E3 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		E257C531C54C4F968B88EE78 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		E4271E25293EA22172CCEFA5 /* libPods-iraivarthai-iraivarthaiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iraivarthai-iraivarthaiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6911B88029B3630353FE22E /* Pods-iraivarthai-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iraivarthai-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-iraivarthai-tvOSTests/Pods-iraivarthai-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F2183FF182C1430F9B55336E /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF4B0908FE88D018F642F960 /* libPods-iraivarthai-iraivarthaiTests.a in Frameworks */,
+				EE2E15D8BB89ED87C15EA8B7 /* libPods-iraivarthai-iraivarthaiTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				316D01A7BB48298FFB746AAF /* libPods-iraivarthai.a in Frameworks */,
+				C301CB53BD9EB4B98BA5EFEF /* libPods-iraivarthai.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB562B2B14DA215A3F292E23 /* libPods-iraivarthai-tvOS.a in Frameworks */,
+				55F0832009E8972BFD4DA1FF /* libPods-iraivarthai-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A701CEC1AB58FE691690DBA /* libPods-iraivarthai-tvOSTests.a in Frameworks */,
+				965C90E867AD30EA72F770AA /* libPods-iraivarthai-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,10 +181,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				5411562FB69194A54A3486C6 /* libPods-iraivarthai.a */,
-				E4271E25293EA22172CCEFA5 /* libPods-iraivarthai-iraivarthaiTests.a */,
-				33DE253D608C4DF5AF9C86AB /* libPods-iraivarthai-tvOS.a */,
-				8F3A26E041E915622DD23DF3 /* libPods-iraivarthai-tvOSTests.a */,
+				B7851BA8D91A6F72A8F93DE9 /* libPods-iraivarthai.a */,
+				88688ED610EFE2FCAC8CA319 /* libPods-iraivarthai-iraivarthaiTests.a */,
+				0DB4860FD0E9DB03C1DD4B41 /* libPods-iraivarthai-tvOS.a */,
+				65C4A44585D6717AC7BF9B6F /* libPods-iraivarthai-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,14 +226,14 @@
 		BEC120F27C9FE138439F2648 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9B255A0649E959A8A80B842C /* Pods-iraivarthai.debug.xcconfig */,
-				60FAAD045214F0EB214D8B4A /* Pods-iraivarthai.release.xcconfig */,
-				ABC680439D77CBB8EE3B0273 /* Pods-iraivarthai-iraivarthaiTests.debug.xcconfig */,
-				2032A569C53ACB1DA8617ABB /* Pods-iraivarthai-iraivarthaiTests.release.xcconfig */,
-				CDF9F95C2BFB7E24092438F3 /* Pods-iraivarthai-tvOS.debug.xcconfig */,
-				88FA8CFB4E506DF814C67773 /* Pods-iraivarthai-tvOS.release.xcconfig */,
-				E6911B88029B3630353FE22E /* Pods-iraivarthai-tvOSTests.debug.xcconfig */,
-				1818BD5AF72E2257152F532E /* Pods-iraivarthai-tvOSTests.release.xcconfig */,
+				1637A6E4E740B69D74790E89 /* Pods-iraivarthai.debug.xcconfig */,
+				AE54AF6D2D1EE7C3AC7B93CC /* Pods-iraivarthai.release.xcconfig */,
+				4E30F282EB4BDC6101831BAA /* Pods-iraivarthai-iraivarthaiTests.debug.xcconfig */,
+				362865DC00D967B6015FEA47 /* Pods-iraivarthai-iraivarthaiTests.release.xcconfig */,
+				B165DAA2669B29EEEFB69FC8 /* Pods-iraivarthai-tvOS.debug.xcconfig */,
+				86EC7B7555765B0E8998E1BA /* Pods-iraivarthai-tvOS.release.xcconfig */,
+				7EAC2BB88BA3B206280D6C30 /* Pods-iraivarthai-tvOSTests.debug.xcconfig */,
+				A00B2564AAD37C0EF8FC8BB9 /* Pods-iraivarthai-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -271,10 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "iraivarthaiTests" */;
 			buildPhases = (
-				999811420A05F033231386CA /* [CP] Check Pods Manifest.lock */,
+				AFEC697C3CBAFAF8BC1738CE /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				320ED238B2B0A4F0144F8006 /* [CP] Copy Pods Resources */,
+				4DDB66D16959F1217BFC73DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,12 +292,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "iraivarthai" */;
 			buildPhases = (
-				072544CE9FD625370042BDE9 /* [CP] Check Pods Manifest.lock */,
+				6DAD278E8506F4E9D211F547 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				EC8B2943273B721C4F563F64 /* [CP] Copy Pods Resources */,
+				F5A0A926F70103E4A0D6856E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,7 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "iraivarthai-tvOS" */;
 			buildPhases = (
-				7E8C548528618FF92A598305 /* [CP] Check Pods Manifest.lock */,
+				F131089C4087336669025E3D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -330,7 +334,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "iraivarthai-tvOSTests" */;
 			buildPhases = (
-				674F719F9D6D6A73BAA2246A /* [CP] Check Pods Manifest.lock */,
+				9D41DC33C413E51A3442979F /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -461,7 +465,57 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		072544CE9FD625370042BDE9 /* [CP] Check Pods Manifest.lock */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		320ED238B2B0A4F0144F8006 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iraivarthai-iraivarthaiTests/Pods-iraivarthai-iraivarthaiTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iraivarthai-iraivarthaiTests/Pods-iraivarthai-iraivarthaiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DDB66D16959F1217BFC73DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iraivarthai-iraivarthaiTests/Pods-iraivarthai-iraivarthaiTests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iraivarthai-iraivarthaiTests/Pods-iraivarthai-iraivarthaiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DAD278E8506F4E9D211F547 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,21 +537,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		674F719F9D6D6A73BAA2246A /* [CP] Check Pods Manifest.lock */ = {
+		9D41DC33C413E51A3442979F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,7 +559,47 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E8C548528618FF92A598305 /* [CP] Check Pods Manifest.lock */ = {
+		AFEC697C3CBAFAF8BC1738CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iraivarthai-iraivarthaiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8B2943273B721C4F563F64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iraivarthai/Pods-iraivarthai-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iraivarthai/Pods-iraivarthai-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F131089C4087336669025E3D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -541,26 +621,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		999811420A05F033231386CA /* [CP] Check Pods Manifest.lock */ = {
+		F5A0A926F70103E4A0D6856E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-iraivarthai/Pods-iraivarthai-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iraivarthai-iraivarthaiTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iraivarthai/Pods-iraivarthai-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -668,7 +744,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABC680439D77CBB8EE3B0273 /* Pods-iraivarthai-iraivarthaiTests.debug.xcconfig */;
+			baseConfigurationReference = 4E30F282EB4BDC6101831BAA /* Pods-iraivarthai-iraivarthaiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -691,7 +767,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2032A569C53ACB1DA8617ABB /* Pods-iraivarthai-iraivarthaiTests.release.xcconfig */;
+			baseConfigurationReference = 362865DC00D967B6015FEA47 /* Pods-iraivarthai-iraivarthaiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -711,7 +787,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B255A0649E959A8A80B842C /* Pods-iraivarthai.debug.xcconfig */;
+			baseConfigurationReference = 1637A6E4E740B69D74790E89 /* Pods-iraivarthai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -726,7 +802,7 @@
 				);
 				INFOPLIST_FILE = iraivarthai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 8.0;
+				MARKETING_VERSION = 8.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -744,7 +820,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60FAAD045214F0EB214D8B4A /* Pods-iraivarthai.release.xcconfig */;
+			baseConfigurationReference = AE54AF6D2D1EE7C3AC7B93CC /* Pods-iraivarthai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -753,7 +829,7 @@
 				DEVELOPMENT_TEAM = XVS57X3DAJ;
 				INFOPLIST_FILE = iraivarthai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 8.0;
+				MARKETING_VERSION = 8.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -770,7 +846,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDF9F95C2BFB7E24092438F3 /* Pods-iraivarthai-tvOS.debug.xcconfig */;
+			baseConfigurationReference = B165DAA2669B29EEEFB69FC8 /* Pods-iraivarthai-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -798,7 +874,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88FA8CFB4E506DF814C67773 /* Pods-iraivarthai-tvOS.release.xcconfig */;
+			baseConfigurationReference = 86EC7B7555765B0E8998E1BA /* Pods-iraivarthai-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -826,7 +902,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6911B88029B3630353FE22E /* Pods-iraivarthai-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 7EAC2BB88BA3B206280D6C30 /* Pods-iraivarthai-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -853,7 +929,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1818BD5AF72E2257152F532E /* Pods-iraivarthai-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = A00B2564AAD37C0EF8FC8BB9 /* Pods-iraivarthai-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

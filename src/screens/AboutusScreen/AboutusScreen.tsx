@@ -1,12 +1,14 @@
 import React from 'react';
 import { Image, Linking, ScrollView } from 'react-native';
 import { TOP_BANNER, WHATSAPP, WHATSAPP_SUBSCRIPTION } from '../../images';
-import { Container, Header, Title, Body, Text, Card, CardItem, Left, Thumbnail, Button, Right } from 'native-base';
+import { Container, Header, Title, Body, Text, Card, CardItem, Left, Thumbnail, Button } from 'native-base';
 import Share from 'react-native-share';
 
 import styles from './AboutusScreen.styles';
 
 export default function AboutusScreen() {
+  const [links, setLinks] = React.useState<[]>([]);
+
   const shareOptions = {
     title: 'Share Iraivarthai via',
     message: 'Daily Scripture readings in tamil',
@@ -24,31 +26,6 @@ export default function AboutusScreen() {
           <Title style={{ color: 'white' }}>About Us</Title>
         </Body>
       </Header>
-      {/* <Image style={styles.aboutUsLogo} source={TOP_BANNER}></Image>
-
-      <FlatList
-        data={[
-          {
-            name: "Tamil - www.iraivarthai.org",
-            key: "https://www.iraivarthai.org"
-          },
-          {
-            name: "Sinhala - www.supuwatha.org",
-            key: "https://www.supuwatha.org"
-          },
-          { name: "English - www.missial.org", key: "https://www.missal.org" },
-          {
-            name: "Saints - www.dailysaints.org",
-            key: "https://www.dailysaints.org"
-          }
-        ]}
-        renderItem={({ item }) => (
-          <TouchableOpacity onPress={() => handleButtonPress(item)}>
-            <Text style={styles.item}>{item.name}</Text>
-          </TouchableOpacity>
-        )}
-        ItemSeparatorComponent={this.renderSeparator}
-      /> */}
 
       <ScrollView>
         <Card style={{ borderRadius: 10, padding: 10, shadowRadius: 10 }}>

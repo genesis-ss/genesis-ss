@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Platform, Image } from 'react-native';
+import { View, Platform, Image, Linking } from 'react-native';
 import { Calendar, DateObject } from 'react-native-calendars';
 import { Container, Header, Title, Body, Text, Grid, Col, Content, Button, Row, Subtitle } from 'native-base';
 import Video from 'react-native-video';
@@ -8,12 +8,14 @@ import Modal from 'react-native-modal';
 import Share from 'react-native-share';
 import RNFetchBlob from 'rn-fetch-blob';
 import RNFS from 'react-native-fs';
+import { Col as EasyCol, Row as EasyRow, Grid as EasyGrid } from 'react-native-easy-grid';
+import { WebView } from 'react-native-webview';
 
 import styles from './HomeScreen.styles';
 
 import DateUtil from '../../utils/DateUtil';
 import { format } from 'date-fns';
-import { POSTER } from '../../images';
+import { IRAIOLI2 } from '../../images';
 
 export default function HomeScreen() {
   const [selectedDate, setSelectedDate] = React.useState<Date>(new Date());
@@ -21,7 +23,7 @@ export default function HomeScreen() {
   const [selectedFileType, setSelectedFileType] = React.useState<string>('audio');
   const [shouldShare, setShouldShare] = React.useState<boolean>(false);
 
-  const markedDates = { [format(selectedDate, 'yyyy-MM-dd')]: { selected: true, selectedColor: 'green' } };
+  const markedDates = { [format(selectedDate, 'yyyy-MM-dd')]: { selected: true, selectedColor: 'purple' } };
   const resourceType = 'url';
 
   const resources = {
@@ -65,15 +67,52 @@ export default function HomeScreen() {
         sharePDFWithAndroid(DateUtil.getAudioURL(selectedDate), 'audio/mp3');
       }
     } else if (selectedFileType == 'text') {
-      if (Platform.OS === 'ios') {
-        sharePDFWithIOS(DateUtil.getTextURL(selectedDate), 'application/pdf');
-      } else {
-        sharePDFWithAndroid(DateUtil.getAudioURL(selectedDate), 'application/pdf');
-      }
+      const options = {
+        title: 'Iraivarthai reading in text ',
+        message: 'Iraivarthai reading in text',
+        url: DateUtil.getTextURL(selectedDate),
+      };
+      Share.open(options);
+    } else if (selectedFileType === 'video') {
+      const options = {
+        title: 'Iraivarthai Video ',
+        message: 'Iraivarthai video',
+        url: DateUtil.getVideoURL(selectedDate),
+      };
+      Share.open(options);
+    } else if (selectedFileType === 'saintsAudio') {
+      const options = {
+        title: 'Saints audio',
+        message: 'Saints audio',
+        url: DateUtil.getSaintsAudioURL(selectedDate),
+      };
+      Share.open(options);
+    } else if (selectedFileType === 'saintsVideo') {
+      const options = {
+        title: 'Saints video',
+        message: 'Saints video',
+        url: DateUtil.getSaintsVideoURL(selectedDate),
+      };
+      Share.open(options);
+    } else if (selectedFileType === 'saintsText') {
+      const options = {
+        title: 'Saints Text',
+        message: 'Saints Text',
+        url: DateUtil.getSaintsTextURL(selectedDate),
+      };
+      Share.open(options);
+    } else if (selectedFileType === 'reflection') {
+      const options = {
+        title: 'Daily homily',
+        message: 'Daily homily',
+        url: DateUtil.getSaintsTextURL(selectedDate),
+      };
+      Share.open(options);
     } else if (selectedFileType == 'iraiOli') {
       Share.open(shareIraiOli);
     }
   }
+
   const toggleModal = (selectedFileType?: string) => {
     if (setSelectedFileType !== null) {
       setSelectedFileType(selectedFileType);
@@ -110,33 +149,23 @@ export default function HomeScreen() {
   }
 
   const dailyAudio = (
-    <View style={{ flex: 1 }}>
-      <Image
-        source={{
-          uri: 'https://supuwatha.org/web/TAMIL/IMAGE/2020/MAY/31.jpg',
-          cache: 'only-if-cached',
-        }}
-        style={styles.poster}
-      />
-
-      <Video
-        controls={true}
-        audioOnly={true}
-        ignoreSilentSwitch={'ignore'}
-        paused={false}
-        allowsExternalPlayback={true}
-        fullscreen={false}
-        source={{ uri: DateUtil.getAudioURL(selectedDate) }} // Can be a URL or a local file.
-        ref={(ref) => {
-          this.player = ref;
-        }} // Store reference
-        onBuffer={this.onBuffer} // Callback when remote video is buffering
-        onError={this.videoError} // Callback when video cannot be loaded
-        onPlaybackResume={handleVideoStart}
-        style={styles.backgroundVideo}
-        playInBackground={true}
-      />
-    </View>
+    <Video
+      controls={true}
+      audioOnly={true}
+      ignoreSilentSwitch={'ignore'}
+      paused={false}
+      allowsExternalPlayback={true}
+      fullscreen={false}
+      source={{ uri: DateUtil.getAudioURL(selectedDate) }} // Can be a URL or a local file.
+      ref={(ref) => {
+        this.player = ref;
+      }} // Store reference
+      onBuffer={this.onBuffer} // Callback when remote video is buffering
+      onError={this.videoError} // Callback when video cannot be loaded
+      onPlaybackResume={handleVideoStart}
+      style={styles.backgroundVideo}
+      playInBackground={true}
+    />
   );
 
   const dailyVideo = (
@@ -157,14 +186,15 @@ export default function HomeScreen() {
 
   const dailyText = (
     <View style={{ flex: 1 }}>
-      <PDFView
+      {/* <PDFView
         fadeInDuration={250.0}
         style={{ flex: 1 }}
         resource={resources[resourceType]}
         resourceType={resourceType}
         onLoad={() => console.log(`PDF rendered from ${resourceType}`)}
         onError={() => console.log('Cannot render PDF', Error)}
-      />
+      /> */}
+      <WebView source={{ uri: DateUtil.getTextURL(selectedDate) }} />
       <Video
         paused={false}
         allowsExternalPlayback={true}
@@ -261,22 +291,34 @@ export default function HomeScreen() {
   );
 
   const iraiOli = (
-    <Video
-      paused={false}
-      audioOnly={true}
-      allowsExternalPlayback={true}
-      fullscreen={false}
-      poster="https://www.supuwatha.com/images/iraioli.png"
-      source={{ uri: 'https://streamingv2.shoutcast.com/iraivarthai' }} // Can be a URL or a local file.
-      ref={(ref) => {
-        this.player = ref;
-      }} // Store reference
-      onBuffer={this.onBuffer} // Callback when remote video is buffering
-      onError={this.videoError} // Callback when video cannot be loaded
-      style={styles.backgroundVideo}
-      playInBackground={true}
-      controls={true}
-    />
+    <View style={{ flex: 1 }}>
+      <View style={{ height: 150 }}></View>
+      <EasyGrid>
+        <EasyRow size={80}>
+          <Image
+            source={IRAIOLI2}
+            style={{ flex: 1, justifyContent: 'center', resizeMode: 'contain', alignItems: 'center' }}
+          ></Image>
+        </EasyRow>
+        <EasyRow size={20}>
+          <Video
+            paused={false}
+            audioOnly={true}
+            allowsExternalPlayback={true}
+            fullscreen={false}
+            source={{ uri: 'https://streamingv2.shoutcast.com/iraivarthai' }} // Can be a URL or a local file.
+            ref={(ref) => {
+              this.player = ref;
+            }} // Store reference
+            onBuffer={this.onBuffer} // Callback when remote video is buffering
+            onError={this.videoError} // Callback when video cannot be loaded
+            style={styles.backgroundVideo}
+            playInBackground={true}
+            controls={true}
+          />
+        </EasyRow>
+      </EasyGrid>
+    </View>
   );
 
   selectedContent = dailyAudio;
@@ -353,12 +395,7 @@ export default function HomeScreen() {
               <Text>Close</Text>
             </Button>
             <View style={{ width: 10 }}></View>
-            <Button
-              disabled={selectedFileType === 'video' || selectedFileType === 'saintsVideo' ? true : false}
-              style={{ width: '47%' }}
-              dark={selectedFileType === 'video' || selectedFileType === 'saintsVideo' ? false : true}
-              onPress={handleShare}
-            >
+            <Button style={{ width: '47%' }} dark onPress={handleShare}>
               <Text>Share</Text>
             </Button>
           </View>
@@ -414,7 +451,11 @@ export default function HomeScreen() {
             <Col style={{ padding: 2 }}>
               <Button primary onPress={() => toggleModal('iraiOli')} style={{ justifyContent: 'center' }}>
                 <Text style={{ fontSize: 14 }}>IRAIOLI / இறைஒலி (My Catholic Radio)</Text>
+              
               </Button>
+              <Text onPress={()=>{
+                Linking.openURL(DateUtil.getAudioURL(selectedDate))
+              }}>Open Web</Text>
             </Col>
           </Row>
         </Grid>
