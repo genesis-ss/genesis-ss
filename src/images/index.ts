@@ -35,6 +35,19 @@ import WHATSAPP from '../images/whatsapp.png';
 import WHATSAPP_SUBSCRIPTION from '../images/iraivarthai_whatsapp.jpeg';
 import POSTER from '../images/poster.jpg';
 import IRAIOLI2 from '../images/iraioli2.png';
+import RADIOICON from '../images/iconradio.png';
+import SAINTTEXT from '../images/sainttext.png';
+import SAINTAUDIO from '../images/saintaudio.png';
+import SAINTVIDEO from '../images/saintvideo.png';
+import READINGAUDIO from '../images/audio.png';
+import READINGVIDEO from '../images/video.png';
+import READINGTEXT from '../images/text.png';
+import TODAYICON from '../images/today.png';
+import LRICON from '../images/lr.png';
+import LWICON from '../images/lw.png';
+import LGICON from '../images/lg.png';
+import LPICON from '../images/lp.png';
+import LROICON from '../images/lro.png';
 
 export {
   TOP_BANNER,
@@ -74,4 +87,17 @@ export {
   WHATSAPP_SUBSCRIPTION,
   POSTER,
   IRAIOLI2,
+  RADIOICON,
+  SAINTTEXT,
+  SAINTAUDIO,
+  SAINTVIDEO,
+  READINGAUDIO,
+  READINGVIDEO,
+  READINGTEXT,
+  TODAYICON,
+  LRICON,
+  LGICON,
+  LWICON,
+  LPICON,
+  LROICON
 };

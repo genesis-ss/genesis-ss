@@ -236,11 +236,11 @@ PODS:
   - React-jsinspector (0.63.4)
   - react-native-safe-area-context (1.0.0):
     - React
-  - react-native-video (4.4.5):
-    - React
-    - react-native-video/Video (= 4.4.5)
-  - react-native-video/Video (4.4.5):
-    - React
+  - react-native-video (5.2.0):
+    - React-Core
+    - react-native-video/Video (= 5.2.0)
+  - react-native-video/Video (5.2.0):
+    - React-Core
   - react-native-webview (10.1.1):
     - React
   - React-RCTActionSheet (0.63.4):
@@ -305,12 +305,16 @@ PODS:
     - React-jsi (= 0.63.4)
   - rn-fetch-blob (0.12.0):
     - React-Core
+  - RNCAsyncStorage (1.15.14):
+    - React-Core
   - RNCMaskedView (0.1.10):
     - React
   - RNFS (2.16.6):
     - React
   - RNGestureHandler (1.6.1):
     - React
+  - RNInAppBrowser (3.6.3):
+    - React-Core
   - RNPDF (0.10.2):
     - React
   - RNReanimated (1.8.0):
@@ -376,9 +380,11 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - rn-fetch-blob (from `../node_modules/rn-fetch-blob`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - RNFS (from `../node_modules/react-native-fs`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNInAppBrowser (from `../node_modules/react-native-inappbrowser-reborn`)
   - RNPDF (from `../node_modules/react-native-view-pdf`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
@@ -460,12 +466,16 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   rn-fetch-blob:
     :path: "../node_modules/rn-fetch-blob"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
   RNCMaskedView:
     :path: "../node_modules/@react-native-community/masked-view"
   RNFS:
     :path: "../node_modules/react-native-fs"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNInAppBrowser:
+    :path: "../node_modules/react-native-inappbrowser-reborn"
   RNPDF:
     :path: "../node_modules/react-native-view-pdf"
   RNReanimated:
@@ -507,7 +517,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
   React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
   react-native-safe-area-context: 5f3e081f937ab7c44c179d551f332fa494cfcf8f
-  react-native-video: aa527b0acb37f94c4491e70df0274cb26979405d
+  react-native-video: 77ce22be7abff9e373527ca10106a99dea3ba56c
   react-native-webview: 3ab69facc798f3bf2ab7c6e3dcdc76904dbba2c6
   React-RCTActionSheet: 89a0ca9f4a06c1f93c26067af074ccdce0f40336
   React-RCTAnimation: 1bde3ecc0c104c55df246eda516e0deb03c4e49b
@@ -520,9 +530,11 @@ SPEC CHECKSUMS:
   React-RCTVibration: ae4f914cfe8de7d4de95ae1ea6cc8f6315d73d9d
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
   rn-fetch-blob: f065bb7ab7fb48dd002629f8bdcb0336602d3cba
+  RNCAsyncStorage: 4b6538222ce3f01f61011f512226ba3aaa0dc336
   RNCMaskedView: f5c7d14d6847b7b44853f7acb6284c1da30a3459
   RNFS: 2bd9eb49dc82fa9676382f0585b992c424cd59df
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
+  RNInAppBrowser: 5672feb84e731411f6911979c71649c240a90202
   RNPDF: f6adfcb6299b2ad7f7d14600c578764ab472ff54
   RNReanimated: 955cf4068714003d2f1a6e2bae3fb1118f359aff
   RNScreens: cf198f915f8a2bf163de94ca9f5bfc8d326c3706

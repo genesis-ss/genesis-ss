@@ -28,6 +28,7 @@ import {
   LENT20,
 } from '../../images';
 import styles from './LentScreen.styles';
+import { InAppBrowser } from 'react-native-inappbrowser-reborn';
 
 export default function LentScreen() {
   const baseURL = 'https://supuwatha.com/web/TAMIL/PRAYERS/LENT/STATIONS';
@@ -35,9 +36,47 @@ export default function LentScreen() {
   const playerRef = useRef(null);
   const [playing, setPlaying] = useState(false);
 
-  function handleOpenUrl(fileName: string) {
-    Linking.openURL(`${baseURL}${fileName}.pdf`);
+  async function handleOpenUrl(fileName: string) {
+    try {
+      if (await InAppBrowser.isAvailable()) {
+        const result = await InAppBrowser.open((`${baseURL}${fileName}.pdf`), {
+          // iOS Properties
+          dismissButtonStyle: 'cancel',
+          preferredBarTintColor: 'green',
+          preferredControlTintColor: 'white',
+          readerMode: false,
+          animated: true,
+          modalPresentationStyle: 'fullScreen',
+          modalTransitionStyle: 'coverVertical',
+          modalEnabled: true,
+          enableBarCollapsing: false,
+          // Android Properties
+          showTitle: true,
+          toolbarColor: 'white',
+          secondaryToolbarColor: 'black',
+          navigationBarColor: 'black',
+          navigationBarDividerColor: 'white',
+          enableUrlBarHiding: true,
+          enableDefaultShare: true,
+          forceCloseOnRedirection: false,
+          // Specify full animation resource identifier(package:anim/name)
+          // or only resource name(in case of animation bundled with app).
+          animations: {
+            startEnter: 'slide_in_right',
+            startExit: 'slide_out_left',
+            endEnter: 'slide_in_left',
+            endExit: 'slide_out_right',
+          },
+          headers: {
+            'my-custom-header': 'my custom header value',
+          },
+        });
+      } else Linking.openURL((`${baseURL}${fileName}.pdf`));
+    } catch (error) {
+      console.log(error);
+    }
   }
+
   return (
     <Container>
       <Header style={{ backgroundColor: '#800080' }}>
@@ -68,7 +107,7 @@ export default function LentScreen() {
           <Text style={{ fontSize: 20, padding: 10 }}>Download way of the cross content in PDF format</Text>
           <Grid>
             <Row>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('01')}>
                   <Image style={styles.logo} source={LENT1}></Image>
                 </TouchableOpacity>
@@ -76,7 +115,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>01</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('02')}>
                   <Image style={styles.logo} source={LENT2}></Image>
                 </TouchableOpacity>
@@ -85,7 +124,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>02</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('03')}>
                   <Image style={styles.logo} source={LENT3}></Image>
                 </TouchableOpacity>
@@ -94,7 +133,7 @@ export default function LentScreen() {
                 </Badge>
               </Col>
 
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('04')}>
                   <Image style={styles.logo} source={LENT4}></Image>
                 </TouchableOpacity>
@@ -105,7 +144,7 @@ export default function LentScreen() {
             </Row>
 
             <Row>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('05')}>
                   <Image style={styles.logo} source={LENT5}></Image>
                 </TouchableOpacity>
@@ -113,7 +152,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>05</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('06')}>
                   <Image style={styles.logo} source={LENT6}></Image>
                 </TouchableOpacity>
@@ -121,7 +160,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>06</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('07')}>
                   <Image style={styles.logo} source={LENT7}></Image>
                 </TouchableOpacity>
@@ -129,7 +168,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>07</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('08')}>
                   <Image style={styles.logo} source={LENT8}></Image>
                 </TouchableOpacity>
@@ -139,7 +178,7 @@ export default function LentScreen() {
               </Col>
             </Row>
             <Row>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('09')}>
                   <Image style={styles.logo} source={LENT9}></Image>
                 </TouchableOpacity>
@@ -147,7 +186,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>09</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('10')}>
                   <Image style={styles.logo} source={LENT10}></Image>
                 </TouchableOpacity>
@@ -155,7 +194,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>10</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('11')}>
                   <Image style={styles.logo} source={LENT11}></Image>
                 </TouchableOpacity>
@@ -163,8 +202,8 @@ export default function LentScreen() {
                   <Text style={styles.title}>11</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
-                <TouchableOpacity style={styles.imageButton} xt onPress={() => handleOpenUrl('12')}>
+              <Col size={25} style={styles.imageColumn}>
+                <TouchableOpacity style={styles.imageButton}  onPress={() => handleOpenUrl('12')}>
                   <Image style={styles.logo} source={LENT12}></Image>
                 </TouchableOpacity>
                 <Badge style={styles.badge}>
@@ -173,7 +212,7 @@ export default function LentScreen() {
               </Col>
             </Row>
             <Row>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('13')}>
                   <Image style={styles.logo} source={LENT13}></Image>
                 </TouchableOpacity>
@@ -181,7 +220,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>13</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('14')}>
                   <Image style={styles.logo} source={LENT14}></Image>
                 </TouchableOpacity>
@@ -189,7 +228,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>14</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('15')}>
                   <Image style={styles.logo} source={LENT15}></Image>
                 </TouchableOpacity>
@@ -197,7 +236,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>15</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('16')}>
                   <Image style={styles.logo} source={LENT16}></Image>
                 </TouchableOpacity>
@@ -207,7 +246,7 @@ export default function LentScreen() {
               </Col>
             </Row>
             <Row>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('17')}>
                   <Image style={styles.logo} source={LENT17}></Image>
                 </TouchableOpacity>
@@ -215,7 +254,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>17</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('18')}>
                   <Image style={styles.logo} source={LENT18}></Image>
                 </TouchableOpacity>
@@ -223,7 +262,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>18</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('19')}>
                   <Image style={styles.logo} source={LENT19}></Image>
                 </TouchableOpacity>
@@ -231,7 +270,7 @@ export default function LentScreen() {
                   <Text style={styles.title}>19</Text>
                 </Badge>
               </Col>
-              <Col size={25}>
+              <Col size={25} style={styles.imageColumn}>
                 <TouchableOpacity style={styles.imageButton} onPress={() => handleOpenUrl('20')}>
                   <Image style={styles.logo} source={LENT20}></Image>
                 </TouchableOpacity>

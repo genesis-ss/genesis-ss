@@ -1,11 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  logo: {
-    resizeMode: 'contain',
-    flex: 1,
-    aspectRatio: 1, // Your aspect ratio
-    height: 200,
+  logo: {    
+    height: 100,
+    width:100
   },
   container: {
     flex: 1,
@@ -21,12 +19,14 @@ export default StyleSheet.create({
   },
   badge: {
     alignSelf: 'center',
-    justifyContent: 'center',
-    alignContent: 'center',
     backgroundColor: '#800080',
   },
   imageButton: {
     paddingTop: 5,
     paddingBottom: 5,
   },
+  imageColumn: {
+    alignItems: "center"
+    
+  }
 });

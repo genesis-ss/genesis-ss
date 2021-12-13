@@ -16,8 +16,51 @@ import {
   THAVAGEETHANGAL,
 } from '../../images';
 import styles from './LinkScreen.styles';
+import { InAppBrowser } from 'react-native-inappbrowser-reborn';
 
 export default function LinkScreen() {
+
+  async function openLink(url: string) {
+    try {
+      if (await InAppBrowser.isAvailable()) {
+        const result = await InAppBrowser.open(url, {
+          // iOS Properties
+          dismissButtonStyle: 'cancel',
+          preferredBarTintColor: 'green',
+          preferredControlTintColor: 'white',
+          readerMode: false,
+          animated: true,
+          modalPresentationStyle: 'fullScreen',
+          modalTransitionStyle: 'coverVertical',
+          modalEnabled: true,
+          enableBarCollapsing: false,
+          // Android Properties
+          showTitle: true,
+          toolbarColor: 'white',
+          secondaryToolbarColor: 'black',
+          navigationBarColor: 'black',
+          navigationBarDividerColor: 'white',
+          enableUrlBarHiding: true,
+          enableDefaultShare: true,
+          forceCloseOnRedirection: false,
+          // Specify full animation resource identifier(package:anim/name)
+          // or only resource name(in case of animation bundled with app).
+          animations: {
+            startEnter: 'slide_in_right',
+            startExit: 'slide_out_left',
+            endEnter: 'slide_in_left',
+            endExit: 'slide_out_right',
+          },
+          headers: {
+            'my-custom-header': 'my custom header value',
+          },
+        });
+      } else Linking.openURL(url);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <Container>
       <Header style={{ backgroundColor: 'green' }}>
@@ -32,9 +75,7 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL('https://www.iraivarthai.org');
-              }}
+              onPress={() => openLink('https://www.iraivarthai.org')}
             >
               <Left>
                 <Thumbnail square source={IRAIVARTHAI}></Thumbnail>
@@ -45,9 +86,7 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL('https://www.supuwatha.org');
-              }}
+              onPress={() => openLink('https://www.supuwatha.org')}
             >
               <Left>
                 <Thumbnail square source={SUPUWATHA}></Thumbnail>
@@ -59,9 +98,7 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL('https://www.missal.org');
-              }}
+              onPress={() => openLink('https://www.missal.org')}
             >
               <Left>
                 <Thumbnail square source={MISSAL}></Thumbnail>
@@ -72,9 +109,7 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL('https://www.dailysaints.org');
-              }}
+              onPress={() => openLink('https://www.dailysaints.org')}
             >
               <Left>
                 <Thumbnail square source={SAINTS}></Thumbnail>
@@ -86,13 +121,11 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button={true}
-              onPress={() => {
-                Linking.openURL(
-                  Platform.OS === 'ios'
-                    ? 'https://apps.apple.com/sg/app/iraiputhaham/id1019334920'
-                    : 'https://play.google.com/store/apps/details?id=com.iraivarthai.iraiputhaham&hl=en',
-                );
-              }}
+              onPress={() => openLink(
+                Platform.OS === 'ios'
+                  ? 'https://apps.apple.com/sg/app/iraiputhaham/id1019334920'
+                  : 'https://play.google.com/store/apps/details?id=com.iraivarthai.iraiputhaham&hl=en',
+              )}
             >
               <Left>
                 <Thumbnail square source={IRAIPUTHAHAM}></Thumbnail>
@@ -103,9 +136,7 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL('https://www.youtube.com/user/Supuwatha');
-              }}
+              onPress={() => openLink('https://www.youtube.com/user/Supuwatha')}
             >
               <Left>
                 <Thumbnail square source={YOUTUBE}></Thumbnail>
@@ -117,9 +148,7 @@ export default function LinkScreen() {
             <CardItem
               button
               style={styles.CardItem}
-              onPress={() => {
-                Linking.openURL('https://soundcloud.com/supuwatha');
-              }}
+              onPress={() => openLink('https://soundcloud.com/supuwatha')}
             >
               <Left>
                 <Thumbnail square source={SOUNDCLOUD}></Thumbnail>
@@ -131,9 +160,7 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL('https://twitter.com/supuwatha');
-              }}
+              onPress={() => openLink('https://twitter.com/supuwatha')}
             >
               <Left>
                 <Thumbnail square source={TWITTER}></Thumbnail>
@@ -145,9 +172,7 @@ export default function LinkScreen() {
             <CardItem
               button
               style={styles.CardItem}
-              onPress={() => {
-                Linking.openURL('https://m.facebook.com/SUPUWATHA');
-              }}
+              onPress={() => openLink('https://m.facebook.com/SUPUWATHA')}
             >
               <Left>
                 <Thumbnail square source={FACEBOOK}></Thumbnail>
@@ -159,9 +184,7 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL('https://www.supuwatha.com/catholicradio/radio.html');
-              }}
+              onPress={() => openLink('https://www.supuwatha.com/catholicradio/radio.html')}
             >
               <Left>
                 <Thumbnail square source={IRAIOLI}></Thumbnail>
@@ -173,13 +196,11 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL(
-                  Platform.OS === 'ios'
-                    ? 'https://apps.apple.com/sg/app/my-catholic-radio/id1475346348'
-                    : 'https://play.google.com/store/apps/details?id=com.supuwatha.mycatholicradiov2&hl=en_SG',
-                );
-              }}
+              onPress={() => openLink(
+                Platform.OS === 'ios'
+                  ? 'https://apps.apple.com/sg/app/my-catholic-radio/id1475346348'
+                  : 'https://play.google.com/store/apps/details?id=com.supuwatha.mycatholicradiov2&hl=en_SG',
+              )}
             >
               <Left>
                 <Thumbnail square source={IRAIOLI}></Thumbnail>
@@ -191,9 +212,7 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL('https://www.iraivarthai.org/thavageethangal/');
-              }}
+              onPress={() => openLink('https://www.iraivarthai.org/thavageethangal/')}
             >
               <Left>
                 <Thumbnail square source={THAVAGEETHANGAL}></Thumbnail>
@@ -205,9 +224,7 @@ export default function LinkScreen() {
             <CardItem
               style={styles.CardItem}
               button
-              onPress={() => {
-                Linking.openURL('https://www.iraivarthai.org/iraigeethangal/');
-              }}
+              onPress={() => openLink('https://www.iraivarthai.org/iraigeethangal/')}
             >
               <Left>
                 <Thumbnail square source={IRAIGEETHANGAL}></Thumbnail>
